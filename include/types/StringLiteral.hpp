@@ -1,5 +1,7 @@
 #include <algorithm>
 
+namespace sb::types {
+
 template <std::size_t N>
 struct StringLiteral {
   char data[N]{};
@@ -45,3 +47,5 @@ template <std::size_t s1, std::size_t s2>
 consteval auto operator==(const char (&str)[s2], StringLiteral<s1> fs) {
   return StringLiteral<s2>(str) == fs;
 }
+
+}  // namespace sb::types

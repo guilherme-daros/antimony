@@ -1,6 +1,7 @@
 #pragma once
 
-namespace types {
+namespace sb::types {
+
 template <class T>
 class Singleton {
  public:
@@ -20,4 +21,5 @@ class Singleton {
 
   static inline T *instance_ = nullptr;
 };
-}  // namespace types
+
+}  // namespace sb::types

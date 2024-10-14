@@ -1,18 +1,11 @@
-# Protocol 
+## (Antimony) Types Library 
 
-[x] Should get only filename
-[ ] Implement filtering
-[ ] Implement syncronization
-[ ] Move stuff for other classes
-[ ] Implement uptime counter
+Small collection of useful types
 
-LoggerBase:
-    declares pure virtual log functions for all Log Levels
+#### Singleton
 
-Logger:
-    has a DomainName
-    impl methods for all levels
+Inheriting (with CRTP) from this class will turn any class into a Singleton
 
-LoggerAdapter:
-    impl static method to access its std::ostream
-    
+#### StringLiteral
+
+Compile-time string that can be used as non-type template parameter
